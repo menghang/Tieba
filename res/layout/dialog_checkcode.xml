@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_height="wrap_content" android:layout_width="fill_parent"
+ android:background="#333333" android:orientation="horizontal"
+ android:layout_gravity="center"
+ android:id="@+id/dialog">
+
+ <EditText android:layout_height="wrap_content"
+     android:layout_gravity="left" 
+  android:layout_width="wrap_content" android:id="@+id/et_checkcode" android:minWidth="100dip"/>
+ <ImageView
+        android:id="@+id/iv_checkcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        />
+</LinearLayout>

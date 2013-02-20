@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_main"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+
+<!-- 
+        <TextView
+            android:id="@+id/tv_statues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+ -->
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+  
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="402dp"
+                android:orientation="vertical" >
+<TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#666666"
+            android:text="自动签到(测试)" />
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TimePicker
+                        android:id="@+id/tp_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <CheckBox
+                        android:id="@+id/cb_autosign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="每天自动签到" />
+
+                </LinearLayout>
+<TextView
+            android:id="@+id/textView3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#666666"
+            android:text="自定义背景" />
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="说明:图片尺寸要适中，过大会造成崩溃。建议先根据自己的分辨率对图片进行一下处理，大小不要超过1M。" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/bt_choose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="设置背景图" />
+
+                    <Button
+                        android:id="@+id/bt_reset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="还原默认" />
+
+                  
+                </LinearLayout>
+  <TextView
+                        android:id="@+id/tv_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+  
+  <TextView
+            android:id="@+id/textView4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#666666"
+            android:text="不签到的贴吧" />
+
+<EditText
+    android:id="@+id/et_tbs"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="说明:输入完整贴吧名，不含“吧”字，例如“显卡吧”则输入“显卡”，贴吧之间使用短横线“-”间隔。" />
+                 <Button
+                        android:id="@+id/bt_tbs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="保存输入" />
+                 
+                 <TextView
+            android:id="@+id/textView5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#666666"
+            android:text="登录方式" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="说明:接口一为默认（WAP接口），度娘抽风时需要输入验证码；接口二为WEB接口，对网络要求较高，不太稳定。" />
+                    <RadioGroup
+android:id="@+id/rg_login"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="horizontal"
+>
+		<RadioButton
+                     android:id="@+id/rb_1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:checked="true"
+                     android:text="接口一" />
+
+                 <RadioButton
+                     android:id="@+id/rb_2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="接口二" />
+</RadioGroup>
+     <TextView
+            android:id="@+id/tv_sign_delay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#666666"
+            android:text="签到间隔(秒)" />
+                    <SeekBar
+            android:id="@+id/sb_delay"
+            android:max="60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+                     <TextView
+            android:id="@+id/tv_sign_rand"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#666666"
+            android:text="随机因子(秒)" />
+                    <SeekBar
+            android:id="@+id/sb_rand"
+            android:max="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+                 
+
+
+            
+            
+            
+            
+        </ScrollView>
+
+        
+
+    </LinearLayout>

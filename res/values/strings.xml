@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notice">声明：\n本程序公布前已经过测试，作者仅保证程序无后门且发布时功能有效，对于以后官方可能采取的应对措施所造成的损失不承担责任。\n如果你不同意以上声明，请立刻退出。</string>
+    <string name="app_name">贴吧签到工具</string>
+</resources>

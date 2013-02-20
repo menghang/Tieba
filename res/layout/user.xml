@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:id="@+id/rl_main"
+	android:background="@drawable/bj_pj" android:orientation="vertical">
+	<GridView android:id="@+id/gridview_softkeyboard"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true" android:background="#000000"
+		android:horizontalSpacing="5dip" android:numColumns="4"
+		android:stretchMode="columnWidth" android:verticalSpacing="5dip"
+		android:visibility="invisible" android:gravity="center">
+	</GridView>
+	<TextView android:layout_width="fill_parent" android:id="@+id/tv_title"
+		android:layout_height="wrap_content" android:paddingRight="10dip"
+		android:paddingLeft="10dip" android:textColor="#ffffff"
+		android:textSize="20dip" android:text="账号管理" android:gravity="center_horizontal"
+		android:layout_marginTop="10dip"></TextView>
+	<TextView android:layout_width="fill_parent" android:id="@+id/tv_notice"
+		android:paddingRight="6dip"  android:textColor="#e9e110"
+		android:layout_height="wrap_content"
+		android:text="" android:gravity="center_horizontal"
+		android:layout_below="@id/tv_title" style="@style/table_cell_lable" 
+		android:layout_marginTop="10dip"></TextView>
+	<TableLayout android:layout_width="fill_parent" android:id="@+id/tl_main"
+		android:layout_marginTop="20dip" android:layout_height="wrap_content"
+		android:layout_below="@id/tv_notice"
+		android:gravity="center_vertical">
+
+		<TableRow android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginTop="15dip"
+			android:gravity="center_horizontal">
+
+			<TextView android:layout_width="70dip"
+				android:layout_gravity="center_vertical" android:layout_height="wrap_content"
+				style="@style/table_cell_lable" android:text="用户名" />
+
+			<EditText android:id="@+id/et_user" android:layout_width="230dip"
+				android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+				style="@style/table_cell_value" android:text="">
+			</EditText>
+		</TableRow>
+		<TableRow android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginTop="15dip"
+			android:gravity="center_horizontal">
+
+			<TextView android:layout_width="70dip"
+				android:layout_gravity="center_vertical" android:layout_height="wrap_content"
+				style="@style/table_cell_lable" android:text="密码" />
+
+			<EditText android:id="@+id/et_pwd" android:layout_width="230dip"
+				android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+				android:password="true" style="@style/table_cell_value"
+				android:text="">
+			</EditText>
+		</TableRow>
+		
+		<TableRow android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginTop="15dip"
+			android:gravity="center_horizontal">
+
+			<Button android:layout_width="wrap_content"
+				android:layout_gravity="center_vertical" android:layout_height="wrap_content"
+				android:background="@drawable/bt_bg"
+				style="@style/table_cell_value"
+				android:paddingTop="2dip" android:paddingBottom="2dip"
+				android:id="@+id/bt_go" android:text="签到" />
+
+		</TableRow>
+
+	</TableLayout>
+	
+		<!-- android:background="#33ffffff" -->
+		<ScrollView    
+		    android:layout_marginTop="10dip"
+android:id="@+id/scrollView"     android:layout_below="@id/tl_main"
+android:layout_width="fill_parent"    
+android:layout_height="200dip"    
+android:scrollbarStyle="outsideOverlay" 
+android:background="#33000000"
+>    
+<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_marginTop="5dip"
+		android:layout_gravity="center_horizontal" android:textColor="#000000"
+		android:shadowColor="#ffffff"
+		android:shadowDx="0" android:shadowDy="0" android:shadowRadius="4"
+		android:id="@+id/tv_log" android:textSize="12dip" android:text="" />
+</ScrollView>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<TextView android:layout_width="fill_parent"
+			android:paddingRight="6dip" android:layout_gravity="bottom"
+			android:textColor="#000000" android:textSize="12dip"
+			android:layout_height="wrap_content" android:text="by 不懂浪漫的狐狸"
+			android:gravity="right" android:layout_marginBottom="5dip"></TextView>
+	</LinearLayout>
+</RelativeLayout>
